@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Same head section as index.html -->
+    <title>OPPO Phones | Ask Me Mobiles</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="abc.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Comparison Hero Section */
+        .compare-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            height: 300px;
+            display: flex;
+            align-items: center;
+        }
+
+        .my-img {
+            border: 1px solid red;
+        }
+        #head{
+         position: absolute;   
+         bottom: 300px;         
+         padding-left: 550px;
+         color: black;
+        }
+        #Lead{
+            font-size: 50px;
+            position: absolute;   
+            bottom: 200px;         
+            padding-left: 400px;
+            color: black;
+}
+       .banner img{
+       font-size: 300px;
+       text-align: center;
+       margin-top: 50px;
+       background-color: #000000;
+       color: white;
+       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* subtle shadow */
+       border-radius: 30px;
+       padding-left: 20px;
+       display: flex;
+       justify-content: center;
+        width: 100%;
+        height: 100%;
+       padding: 20px;
+       margin-bottom: 50px;
+} 
+       
+        .compare-hero h1 {
+            animation: fadeInDown 1s ease;
+        }
+
+        .compare-hero p {
+            animation: fadeInUp 1s ease;
+        }
+
+        /* Comparison Tool Section */
+        .comparison-tool {
+            position: relative;
+        }
+
+        .comparison-table-responsive {
+            overflow-x: auto;
+            padding-bottom: 20px;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 15px;
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid #e9ecef;
+        }
+
+        .comparison-table th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+            color: #495057;
+            position: sticky;
+            top: 0;
+        }
+
+        .comparison-table thead th:first-child {
+            background-color: #0d6efd;
+            color: white;
+            font-weight: 600;
+        }
+
+        .comparison-table tbody tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        .comparison-table tbody tr:hover {
+            background-color: #f1f3f5;
+        }
+
+        .comparison-table td:first-child {
+            font-weight: 600;
+            text-align: left;
+            background-color: #f8f9fa;
+            color: #495057;
+        }
+    .top_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color:black;
+  padding: 3px;
+  padding-right: 30px;
+  font-size: 10px;
+  row-gap: 100px;
+  font-family: 'Times New Roman', Times, serif;
+}
+        
+      .footer-container {
+        max-width: 1300px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr 1fr;
+        gap: 60px;
+    }
+
+    .footer-brand {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 20px;
+    }
+
+    .footer .logo {
+        font-size: 32px;
+        font-weight: 700;
+        color: #fff
+    }
+
+    .contact-info h3 {
+        font-size: 24px;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 4px;
+    }
+
+    .contact-info p {
+        color: #b8c4d6;
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 12px;
+    }
+
+    .cta-button {
+        display: inline-block;
+        background: #b07a3b;
+        color: white;
+        padding: 14px 32px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 15px;
+        transition: 0.3s ease;
+    }
+
+    .cta-button:hover {
+        background: #000;
+    }
+  /* FOOTER LINKS */
+    .footer-column h4 {
+        font-size: 16px;
+        font-weight: 600;
+        color: #b07a3b;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+
+    .footer-column ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-column ul li {
+        margin-bottom: 12px;
+    }
+
+    .footer-column ul li a {
+        color: #EAEDE3;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 500;
+        font-family: 'Outfit', sans-serif;
+        transition: color 0.3s ease;
+    }
+
+    .footer-column ul li a:hover {
+        color: #000;
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+        .footer-container {
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .footer-container {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+    }
+        .comparison-table img {
+            max-height: 120px;
+            width: auto;
+            display: block;
+            margin: 0 auto;
+            transition: transform 0.3s ease;
+        }
+
+        .comparison-table img:hover {
+            transform: scale(1.05);
+        }
+
+        .comparison-table .form-select {
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            padding: 8px 12px;
+            font-size: 0.9rem;
+            width: 100%;
+            max-width: 200px;
+            margin: 0 auto;
+            transition: all 0.3s ease;
+        }
+
+        .comparison-table .form-select:focus {
+            border-color: #86b7fe;
+            box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+        }
+
+        /* Button Styles */
+        .comparison-tool .btn {
+            padding: 10px 25px;
+            font-weight: 600;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+        }
+
+        .comparison-tool .btn-primary {
+            background-color: #0d6efd;
+            border: none;
+        }
+
+        .comparison-tool .btn-primary:hover {
+            background-color: #0b5ed7;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+        }
+
+        .comparison-tool .btn-outline-primary {
+            border-color: #0d6efd;
+            color: #0d6efd;
+        }
+
+        .comparison-tool .btn-outline-primary:hover {
+            background-color: #0d6efd;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 767.98px) {
+            .compare-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .comparison-table th,
+            .comparison-table td {
+                padding: 10px 8px;
+                font-size: 0.9rem;
+            }
+
+            .comparison-table img {
+                max-height: 80px;
+            }
+
+            .comparison-tool .btn {
+                padding: 8px 15px;
+                font-size: 0.9rem;
+                margin-bottom: 10px;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .comparison-table-responsive {
+                margin-left: -15px;
+                margin-right: -15px;
+            }
+
+            .comparison-table {
+                min-width: 600px;
+            }
+
+            .comparison-tool .btn {
+                display: block;
+                width: 80%;
+                margin: 0 auto 10px;
+            }
+        }
+        .navbar .btn.btn-secondary {
+    background-color: black;
+    border-color: black;
+    color: white;
+}
+.navbar .btn.btn-secondary:hover {
+    background-color: #222 !important;
+    border-color: #222 !important;
+    color: white !important;
+}
+    </style>
+</head>
+
+<body class="Durable furniture-brand">
+ <!-- header -->
+    <header class="top_header">
+      <div class="left_text"> 
+      <p>Save & Convernient Delivery 7-Day Return</p>
+     </div>
+     <div class="right_text">
+      <p>About Us</p>
+     </div>
+    </header> 
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white py-3 border-bottom">
+  <div class="container">
+
+    <!-- Logo -->
+    <img class="navbar-brand fw-light fs-3" src="images/Durable Furniture.png" alt="logo" height="100px">
+    <!-- Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+      <ul class="navbar-nav gap-4 align-items-center">
+
+        <li class="nav-item">
+          <a class="nav-link" href="Home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact.html">Contact</a>
+        </li>
+
+           <li class="nav-item">
+          <a class="nav-link" href="compare.html">Compare</a>
+        </li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="btn btn-secondary dropdown-toggle px-4" href="#" data-bs-toggle="dropdown">
+            Furniture
+          </a>
+          <ul class="dropdown-menu p-3 shadow-lg border-0">
+            <li><a class="dropdown-item py-2" href="Furniture.html">Cubeds</a></li>
+            <li><a class="dropdown-item py-2" href="beds.html">Beds</a></li>
+            <li><a class="dropdown-item py-2" href="sofas.html">Sofas</a></li>
+            <li><a class="dropdown-item py-2" href="kitchen.html">Kitchen</a></li>
+            <li><a class="dropdown-item py-2" href="Bathroom.html">Bathroom</a></li>
+            <li><a class="dropdown-item py-2" href="Livingroom.html">Living Room</a></li>
+          </ul>
+        </li>
+        <!-- Dropdown 2 -->
+        <li class="nav-item dropdown">
+          <a class="btn btn-secondary dropdown-toggle px-4" href="#" data-bs-toggle="dropdown">
+            Brands
+          </a>
+          <ul class="dropdown-menu p-3 shadow-lg border-0">
+            <li><a class="dropdown-item py-2" href="Brand.html">Interwood</a></li>
+            <li><a class="dropdown-item py-2" href="Habitt.html">Habitt</a></li>
+            <li><a class="dropdown-item py-2" href="ChenOne.html">ChenOne</a></li>
+            <li><a class="dropdown-item py-2" href="Renome.html">Renome</a></li>
+            <li><a class="dropdown-item py-2" href="Dolce Vita.html">Dolce Vita</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    
+    <!-- Icons -->
+    <div class="icons">
+      <img src="images/cart.svg" alt="" height="30px">
+      <img src="images/icon.svg" alt="" height="30px">
+      <img src="images/search icon.svg" alt="" height="30px">
+    </div>
+  </div>
+</nav>
+    <nav class="navbar navbar-expand-lg fixed-top" id="myNav"></nav>
+                <section>
+                <div class="banner">
+                    <img src="https://i.pinimg.com/1200x/5e/7c/a9/5e7ca9cbfbbcba41ec888f9359584f52.jpg" alt="">
+                <div class="col-lg-12 text-center">
+                    <h1 class="display-4 fw-bold" id="head">Brands Comparison</h1>
+                    <p class="lead" id="Lead">Compare up to 3 brands side by side</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Tool Section -->
+    <section class="comparison-tool py-5 bg-light">
+    <div class="container">
+        <div class="comparison-table-responsive">
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Durable Furniture Brand</th>
+                        <th>
+                            <select class="form-select brand-select">
+                                <option value="">Select Brand 1</option>
+                            </select>
+                        </th>
+                        <th>
+                            <select class="form-select brand-select">
+                                <option value="">Select Brand 2</option>
+                            </select>
+                        </th>
+                        <th>
+                            <select class="form-select brand-select">
+                                <option value="">Select Brand 3</option>
+                            </select>
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Founded</td>
+                        <td>-</td><td>-</td><td>-</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Country</td>
+                        <td>-</td><td>-</td><td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Specialty</td>
+                        <td>-</td><td>-</td><td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Materials</td>
+                        <td>-</td><td>-</td><td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Warranty</td>
+                        <td>-</td><td>-</td><td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Price Range</td>
+                        <td>-</td><td>-</td><td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="text-center mt-4">
+            <button class="btn btn-outline-primary" id="resetBtn">
+                Reset Comparison
+            </button>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Footer -->
+      <footer class="footer">
+  <div class="footer-container">
+
+    <!-- Brand and Contact -->
+    <div class="footer-brand">
+      <div class="logo">
+        <img src="images/Durable Furniture.png" alt="Logo" height="100px">
+      </div>
+
+      <div class="contact-info">
+        <p>Furniture That Lasts. Style That Inspires.
+Shop by brand • Compare • Download specs</p>
+        <a href="#" class="cta-button">Request for Quote</a>
+      </div>
+    </div>
+
+    <!-- Company Links -->
+    <div class="footer-column">
+      <h4>COMPANY</h4>
+      <ul>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Brands</a></li>
+        <li><a href="">Compare</a></li>
+        <li><a href="">Location</a></li>
+      </ul>
+    </div>
+
+    <!-- Info Links -->
+    <div class="footer-column">
+      <h4>Policies</h4>
+      <ul>
+        <li><a href="">Privacy Policy</a></li>
+        <li><a href="">Terms</a></li>
+        <li><a href="">Warranty</a></li>
+      </ul>
+    </div>
+
+    <!-- Resources Links -->
+    <div class="footer-column">
+      <h4>Social</h4>
+      <ul>
+        <li><a href="">Instagram</a></li>
+        <li><a href="">Facebook</a></li>
+        <li><a href="">YouTube</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+    <footer class="footer py-4 bg-dark text-white" id="myFooter"></footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/navbar.js"></script>
+</body>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const brands = {
+        ikea: {
+            name: "IKEA",
+            founded: "1943",
+            country: "Sweden",
+            specialty: "Ready-to-assemble furniture",
+            materials: "Engineered wood, steel",
+            warranty: "10 Years",
+            price: "Budget – Mid",
+        },
+        godrej: {
+            name: "Godrej Interio",
+            image: "",
+            founded: "1923",
+            country: "India",
+            specialty: "Home & Office Furniture",
+            materials: "Solid wood, steel",
+            warranty: "5–10 Years",
+            price: "Mid – Premium"
+        },
+        urbanladder: {
+            name: "Urban Ladder",
+            image: "",
+            founded: "2012",
+            country: "India",
+            specialty: "Modern home furniture",
+            materials: "Sheesham wood, MDF",
+            warranty: "1–5 Years",
+            price: "Mid"
+        }
+    };
+
+    const selects = document.querySelectorAll(".brand-select");
+    const rows = document.querySelectorAll(".comparison-table tbody tr");
+    const resetBtn = document.getElementById("resetBtn");
+
+    // Fill dropdowns
+    selects.forEach(select => {
+        Object.keys(brands).forEach(key => {
+            const opt = document.createElement("option");
+            opt.value = key;
+            opt.textContent = brands[key].name;
+            select.appendChild(opt);
+        });
+    });
+
+    // Change event
+    selects.forEach((select, colIndex) => {
+        select.addEventListener("change", () => {
+            const brand = brands[select.value];
+
+            rows.forEach(row => {
+                const label = row.cells[0].textContent;
+
+                if (!brand) {
+                    row.cells[colIndex + 1].innerHTML = "-";
+                    return;
+                }
+
+                switch (label) {
+                    case "image":
+                        row.cells[colIndex + 1].innerHTML =
+                            `<img src="${brand.image}" style="max-height:70px">`;
+                        break;
+                    case "Founded":
+                        row.cells[colIndex + 1].textContent = brand.founded;
+                        break;
+                    case "Country":
+                        row.cells[colIndex + 1].textContent = brand.country;
+                        break;
+                    case "Specialty":
+                        row.cells[colIndex + 1].textContent = brand.specialty;
+                        break;
+                    case "Materials":
+                        row.cells[colIndex + 1].textContent = brand.materials;
+                        break;
+                    case "Durability":
+                        row.cells[colIndex + 1].textContent = brand.durability;
+                        break;
+                    case "Warranty":
+                        row.cells[colIndex + 1].textContent = brand.warranty;
+                        break;
+                    case "Price Range":
+                        row.cells[colIndex + 1].textContent = brand.price;
+                        break;
+                }
+            });
+        });
+    });
+
+    // Reset
+    resetBtn.addEventListener("click", () => {
+        selects.forEach(s => s.selectedIndex = 0);
+        rows.forEach(row => {
+            for (let i = 1; i <= 3; i++) row.cells[i].innerHTML = "-";
+        });
+    });
+
+});
+</script>
+</html>
